@@ -100,12 +100,14 @@ body {
       &_close {
         align-self: flex-end;
         cursor: pointer;
-        fill: #6F6E6E;
-
-        &:hover {
-          fill: #222222;
+        svg {
+          fill: #6F6E6E;
         }
-
+        svg {
+          &:hover {
+            fill: #222222;
+          }
+        }
       }
 
       &_title {

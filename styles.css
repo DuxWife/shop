@@ -91,9 +91,11 @@ body {
 .p_head_item .menu_list_close {
   align-self: flex-end;
   cursor: pointer;
+}
+.p_head_item .menu_list_close svg {
   fill: #6F6E6E;
 }
-.p_head_item .menu_list_close:hover {
+.p_head_item .menu_list_close svg:hover {
   fill: #222222;
 }
 .p_head_item .menu_list_title {

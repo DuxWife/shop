@@ -112,11 +112,14 @@ body {
   text-transform: uppercase;
   padding-bottom: 12px;
   cursor: pointer;
+  text-decoration: none;
 }
 .p_head_item .menu_list_subtitle:hover {
   font-weight: 700;
 }
 .p_head_item .menu_list_items {
+  display: flex;
+  flex-direction: column;
   padding: 0 0 10px 20px;
 }
 .p_head_item .menu_list_items_text {
@@ -126,6 +129,7 @@ body {
   color: #6F6E6E;
   margin-bottom: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 .p_head_item .menu_list_items_text:hover {
   font-weight: 700;
@@ -187,7 +191,6 @@ body {
 
 .brand {
   background-color: #F1E4E6;
-  min-height: 764px;
 }
 .brand .container {
   display: flex;
@@ -300,11 +303,12 @@ body {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 48px;
+  padding: 48px 0;
 }
 .products_item {
   max-width: calc((100% - 60px) / 3);
   background-color: #F8F8F8;
+  text-decoration: none;
 }
 .products_item img {
   width: 100%;
@@ -371,7 +375,6 @@ body {
   width: fit-content;
   border: 1px solid #FF6A6A;
   padding: 14px 38px;
-  margin-top: 48px;
   margin-bottom: 95px;
   box-sizing: border-box;
   background-color: #FFFFFF;
@@ -380,6 +383,7 @@ body {
   line-height: 19px;
   color: #F26376;
   text-transform: capitalize;
+  text-decoration: none;
 }
 .products_btn:hover {
   background-color: #F16D7F;
@@ -538,6 +542,23 @@ body {
 }
 .footer_bottom .socials_item:hover svg {
   fill: #FFFFFF;
+}
+
+.p_top {
+  background: #F8F3F4;
+  padding: 60px 0;
+}
+.p_top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p_top_caption {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=styles.css.map */

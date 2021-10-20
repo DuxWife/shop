@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -309,6 +310,9 @@ body {
 }
 .products_item {
   max-width: calc((100% - 60px) / 3);
+  list-style: none;
+}
+.products_item_card {
   background-color: #F8F8F8;
   text-decoration: none;
 }
@@ -561,6 +565,209 @@ body {
   line-height: 29px;
   color: #F16D7F;
   text-transform: uppercase;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs li {
+  display: inline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+.breadcrumbs li + li:before {
+  padding: 4px;
+  color: #636363;
+  content: "/ ";
+}
+.breadcrumbs li a {
+  font-weight: 300;
+  color: #636363;
+  text-decoration: none;
+}
+.breadcrumbs li a:hover {
+  font-weight: 700;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.filters .filter {
+  min-width: 360px;
+  padding: 13px 16px;
+  background-color: #FFFFFF;
+  position: relative;
+  flex-grow: 1;
+}
+.filters .filter_btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.filters .filter_btn svg {
+  margin-left: 11px;
+  fill: #000000;
+}
+.filters .filter_btn_checkbox {
+  display: none;
+}
+.filters .filter_btn_checkbox:checked ~ .filter {
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filters .filter_btn_checkbox:checked ~ .filter .filter_btn {
+  color: #EF5B70;
+}
+.filters .filter_btn_checkbox:checked ~ .filter .filter_btn svg {
+  fill: #EF5B70;
+}
+.filters .filter_btn_checkbox:checked ~ .filter .filter_options {
+  display: block;
+}
+.filters .filter_options {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  padding: 16px 17px 0;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+.filters .filter_options_details {
+  margin-bottom: 18px;
+}
+.filters .filter_options_title {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  text-transform: uppercase;
+  list-style: none;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 11px;
+  cursor: pointer;
+}
+.filters .filter_options_title:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 100%;
+  background-color: #F16D7F;
+}
+.filters .filter_options_title:hover {
+  font-weight: 700;
+}
+.filters .filter_options_subtitle {
+  padding: 11px 16px 0 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.filters .filter_options_subtitle:hover {
+  font-weight: 700;
+}
+.filters_dropdown {
+  display: flex;
+  flex-grow: 2;
+}
+.filters_dropdown_item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-transform: uppercase;
+  padding: 13px 0 13px 30px;
+  position: relative;
+}
+.filters_dropdown_item_btn svg {
+  margin-left: 10px;
+  fill: #6F6E6E;
+}
+.filters_dropdown_item_btn_checkbox {
+  display: none;
+}
+.filters_dropdown_item_btn_checkbox:checked ~ .filters_dropdown_item_options {
+  display: flex;
+  flex-direction: column;
+}
+.filters_dropdown_item_options {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 9px;
+  z-index: 1;
+}
+.filters_dropdown_item_options_item {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+.filters_dropdown_item_options_item:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #EBEBEB;
+  margin-right: 9px;
+}
+.filters_dropdown_item_option {
+  display: flex;
+  margin-bottom: 9px;
+}
+.filters_dropdown_item_option:last-child {
+  margin-bottom: 0;
+}
+.filters_dropdown_item_option input {
+  display: none;
+}
+.filters_dropdown_item_option input:checked ~ .filters_dropdown_item_options_item:before {
+  background-image: url(https://w7.pngwing.com/pngs/289/793/png-transparent-check-mark-scalable-graphics-computer-icons-pink-check-mark-purple-angle-violet-thumbnail.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pagination {
+  display: inline-block;
+  margin-bottom: 96px;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+}
+.pagination a {
+  color: #C4C4C4;
+  float: left;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.pagination a:first-child, .pagination a:last-child {
+  color: #000000;
+}
+.pagination a.active {
+  color: #EF5B70;
+}
+.pagination a:hover:not(.active) {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

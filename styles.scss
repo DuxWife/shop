@@ -100,9 +100,11 @@ body {
       &_close {
         align-self: flex-end;
         cursor: pointer;
+
         svg {
           fill: #6F6E6E;
         }
+
         svg {
           &:hover {
             fill: #222222;
@@ -362,8 +364,12 @@ body {
 
   &_item {
     max-width: calc((100% - 60px) / 3);
-    background-color: #F8F8F8;
-    text-decoration: none;
+    list-style: none;
+
+    &_card {
+      background-color: #F8F8F8;
+      text-decoration: none;
+    }
 
     img {
       width: 100%;
@@ -633,6 +639,7 @@ body {
 
         &:hover {
           background-color: #F16D7F;
+
           svg {
             fill: #FFFFFF;
           }
@@ -645,6 +652,7 @@ body {
 .p_top {
   background: #F8F3F4;
   padding: 60px 0;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -657,5 +665,226 @@ body {
     line-height: 29px;
     color: #F16D7F;
     text-transform: uppercase;
+  }
+}
+
+.breadcrumbs {
+  list-style: none;
+
+  li {
+    display: inline;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+
+    & + li:before {
+      padding: 4px;
+      color: #636363;
+      content: "/\00a0";
+    }
+
+    a {
+      font-weight: 300;
+      color: #636363;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  .filter {
+    min-width: 360px;
+    padding: 13px 16px;
+    background-color: #FFFFFF;
+    position: relative;
+    flex-grow: 1;
+    &_btn {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+      text-transform: uppercase;
+
+      svg {
+        margin-left: 11px;
+        fill: #000000;
+      }
+      &_checkbox {
+        display: none;
+        &:checked ~ {
+          .filter {
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            .filter_btn {
+              color: #EF5B70;
+              svg {
+                fill: #EF5B70;
+              }
+            }
+            .filter_options {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &_options {
+      display: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      box-sizing: border-box;
+      padding: 16px 17px 0;
+      z-index: 1;
+      background-color: #FFFFFF;
+      &_details {
+        margin-bottom: 18px;
+      }
+      &_title {
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #EF5B70;
+        text-transform: uppercase;
+        list-style: none;
+        border-bottom: 1px solid #EBEBEB;
+        padding: 11px;
+        cursor: pointer;
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '';
+          display: block;
+          width: 5px;
+          height: 100%;
+          background-color: #F16D7F;
+        }
+        &:hover {
+          font-weight: 700;
+        }
+      }
+      &_subtitle {
+        padding: 11px 16px 0 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        text-transform: capitalize;
+        cursor: pointer;
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &_dropdown {
+    display: flex;
+    flex-grow: 2;
+    &_item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+      text-transform: uppercase;
+      padding: 13px 0 13px 30px;
+      position: relative;
+      &_btn {
+        svg {
+          margin-left: 10px;
+          fill: #6F6E6E;
+        }
+        &_checkbox {
+          display: none;
+          &:checked ~ {
+            .filters_dropdown_item_options {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      &_options {
+        display: none;
+        position: absolute;
+        background-color: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        padding: 9px;
+        z-index: 1;
+        &_item {
+          display: flex;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #6F6E6E;
+
+          &:before {
+            content: '';
+            display: block;
+            width: 13px;
+            height: 13px;
+            border: 1px solid #EBEBEB;
+            margin-right: 9px;
+          }
+        }
+      }
+      &_option {
+        display: flex;
+        margin-bottom: 9px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        input {
+          display: none;
+          &:checked ~ .filters_dropdown_item_options_item:before {
+            background-image: url(https://w7.pngwing.com/pngs/289/793/png-transparent-check-mark-scalable-graphics-computer-icons-pink-check-mark-purple-angle-violet-thumbnail.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  display: inline-block;
+  margin-bottom: 96px;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+
+  a {
+    color: #C4C4C4;
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    &:first-child, &:last-child {
+      color: #000000;
+    }
+
+    &.active {
+      color: #EF5B70;
+    }
+
+    &:hover:not(.active) {
+      font-weight: 700;
+    }
   }
 }

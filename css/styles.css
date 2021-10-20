@@ -431,7 +431,7 @@ body {
 }
 
 .footer_subscription {
-  background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(images/subscription.jpg);
+  background-image: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../images/subscription.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -10,13 +10,12 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
-.p_head {
+.page_head {
   position: sticky;
   top: 0;
   width: 100%;
@@ -649,7 +648,7 @@ body {
   }
 }
 
-.p_top {
+.page_top {
   background: #F8F3F4;
   padding: 60px 0;
 

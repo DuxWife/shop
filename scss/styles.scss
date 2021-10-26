@@ -372,14 +372,23 @@ body {
     &_card {
       background-color: #F8F8F8;
       text-decoration: none;
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
     }
 
     img {
       width: 100%;
+      display: block;
+      transition: 1s;
     }
 
     &_img {
       position: relative;
+      display: inline-block;
+      overflow: hidden;
     }
 
     &_add {
@@ -490,6 +499,14 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 360px;
+    &:hover {
+      svg {
+        transform: rotate(360deg);
+      }
+    }
+    svg {
+      transition: 1s;
+    }
 
     &_title {
       font-weight: 400;
@@ -638,6 +655,7 @@ body {
 
         svg {
           fill: #000000;
+          transition: 1s;
         }
 
         &:hover {
@@ -645,6 +663,7 @@ body {
 
           svg {
             fill: #FFFFFF;
+            transform: rotate(360deg);
           }
         }
       }
@@ -997,6 +1016,14 @@ body {
       line-height: 19px;
       color: #F26376;
       margin-top: 48px;
+      &:hover {
+        background-color: #FF6A6A;
+        border: 1px solid transparent;
+        color: #FFFFFF;
+        svg {
+          fill: #FFFFFF;
+        }
+      }
     }
   }
 }
@@ -1021,6 +1048,9 @@ body {
       line-height: 17px;
       color: #000000;
       text-transform: uppercase;
+      &:hover {
+        background-color: #D2D2D2;
+      }
     }
   }
   &_products {
@@ -1122,12 +1152,17 @@ body {
       &_btn {
         border: none;
         background-color: #F16D7F;
-        padding: 15px 40px;
+        padding: 15px 0;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
         color: #FFFFFF;
         text-transform: uppercase;
+        &:hover {
+          background-color: #FFFFFF;
+          border: 1px solid #F16D7F;
+          color: #F16D7F;
+        }
       }
     }
   }
@@ -1215,9 +1250,16 @@ body {
     line-height: 13px;
     color: #4A4A4A;
     text-transform: uppercase;
+    &:hover {
+      background-color: #d2d2d2;
+    }
   }
 
   &_button_color {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: fit-content;
     background-color: #F16D7F;
     padding: 16px 29px;
     border: none;
@@ -1226,6 +1268,17 @@ body {
     line-height: 17px;
     color: #FFFFFF;
     text-transform: uppercase;
+    svg {
+      fill: #FFFFFF;
+    }
+    &:hover {
+      background-color: #FFFFFF;
+      border: 1px solid #F16D7F;
+      color: #F16D7F;
+      svg {
+        fill: #F16D7F;
+      }
+    }
   }
 }
 

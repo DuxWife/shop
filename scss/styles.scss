@@ -372,8 +372,10 @@ body {
     article {
       background-color: #F8F8F8;
     }
+
     &_card {
       text-decoration: none;
+
       &:hover {
         img {
           transform: scale(1.2);
@@ -501,11 +503,13 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 360px;
+
     &:hover {
       svg {
         transform: rotate(360deg);
       }
     }
+
     svg {
       transition: 1s;
     }
@@ -725,12 +729,14 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+
   .filter {
     min-width: 360px;
     padding: 13px 16px;
     background-color: #FFFFFF;
     position: relative;
     flex-grow: 1;
+
     &_btn {
       font-weight: 600;
       font-size: 14px;
@@ -742,17 +748,22 @@ body {
         margin-left: 11px;
         fill: #000000;
       }
+
       &_checkbox {
         display: none;
+
         &:checked ~ {
           .filter {
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
             .filter_btn {
               color: #EF5B70;
+
               svg {
                 fill: #EF5B70;
               }
             }
+
             .filter_options {
               display: block;
             }
@@ -770,9 +781,11 @@ body {
       padding: 16px 17px 0;
       z-index: 1;
       background-color: #FFFFFF;
+
       &_details {
         margin-bottom: 18px;
       }
+
       &_title {
         position: relative;
         font-weight: 400;
@@ -784,6 +797,7 @@ body {
         border-bottom: 1px solid #EBEBEB;
         padding: 11px;
         cursor: pointer;
+
         &:before {
           position: absolute;
           top: 0;
@@ -794,10 +808,12 @@ body {
           height: 100%;
           background-color: #F16D7F;
         }
+
         &:hover {
           font-weight: 700;
         }
       }
+
       &_subtitle {
         padding: 11px 16px 0 16px;
         font-weight: 400;
@@ -806,6 +822,7 @@ body {
         color: #6F6E6E;
         text-transform: capitalize;
         cursor: pointer;
+
         &:hover {
           font-weight: 700;
         }
@@ -816,6 +833,7 @@ body {
   &_dropdown {
     display: flex;
     flex-grow: 2;
+
     &_item {
       font-weight: 400;
       font-size: 14px;
@@ -824,13 +842,16 @@ body {
       text-transform: uppercase;
       padding: 13px 0 13px 30px;
       position: relative;
+
       &_btn {
         svg {
           margin-left: 10px;
           fill: #6F6E6E;
         }
+
         &_checkbox {
           display: none;
+
           &:checked ~ {
             .filters_dropdown_item_options {
               display: flex;
@@ -839,6 +860,7 @@ body {
           }
         }
       }
+
       &_options {
         display: none;
         position: absolute;
@@ -846,6 +868,7 @@ body {
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding: 9px;
         z-index: 1;
+
         &_item {
           display: flex;
           font-weight: 400;
@@ -863,14 +886,18 @@ body {
           }
         }
       }
+
       &_option {
         display: flex;
         margin-bottom: 9px;
+
         &:last-child {
           margin-bottom: 0;
         }
+
         input {
           display: none;
+
           &:checked ~ .filters_dropdown_item_options_item:before {
             background-image: url(https://w7.pngwing.com/pngs/289/793/png-transparent-check-mark-scalable-graphics-computer-icons-pink-check-mark-purple-angle-violet-thumbnail.png);
             background-size: cover;
@@ -917,15 +944,18 @@ body {
     background-color: #F7F7F7;
     border: 1px solid #EAEAEA;
     height: 777px;
+
     .carousel-inner {
       .carousel-item {
         height: 724px;
+
         img {
           width: 100%;
           height: 100%;
           object-fit: contain;
           margin: auto;
         }
+
         &.active {
           display: flex;
           justify-content: center;
@@ -964,6 +994,7 @@ body {
       line-height: 17px;
       color: #F16D7F;
       text-transform: uppercase;
+
       &:after {
         content: '';
         width: 64px;
@@ -973,6 +1004,7 @@ body {
         display: block;
       }
     }
+
     &_title {
       font-weight: 300;
       font-size: 18px;
@@ -981,6 +1013,7 @@ body {
       text-transform: uppercase;
       margin-bottom: 48px;
     }
+
     &_description {
       font-weight: 300;
       font-size: 14px;
@@ -989,6 +1022,7 @@ body {
       color: #5E5E5E;
       margin-bottom: 32px;
     }
+
     &_price {
       font-weight: 300;
       font-size: 24px;
@@ -996,11 +1030,13 @@ body {
       color: #EF5B70;
       margin-bottom: 64px;
     }
+
     hr {
       width: 100%;
       margin-bottom: 64px;
       border: 1px solid #EAEAEA;
     }
+
     &_btn {
       display: flex;
       justify-content: center;
@@ -1008,19 +1044,23 @@ body {
       padding: 15px 20px;
       border: 1px solid #FF6A6A;
       background-color: #FFFFFF;
+
       svg {
         fill: #EF5B70;
         margin-right: 20px;
       }
+
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       color: #F26376;
       margin-top: 48px;
+
       &:hover {
         background-color: #FF6A6A;
         border: 1px solid transparent;
         color: #FFFFFF;
+
         svg {
           fill: #FFFFFF;
         }
@@ -1034,12 +1074,14 @@ body {
   justify-content: space-between;
   gap: 128px;
   padding: 96px 0 128px;
+
   &_info {
     &_btns {
       display: flex;
       justify-content: space-between;
       margin-top: 72px;
     }
+
     &_btn {
       background-color: #FFFFFF;
       border: 1px solid #A4A4A4;
@@ -1049,38 +1091,46 @@ body {
       line-height: 17px;
       color: #000000;
       text-transform: uppercase;
+
       &:hover {
         background-color: #D2D2D2;
       }
     }
   }
+
   &_products {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
     &_card {
       filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
       background-color: #FFFFFF;
       display: flex;
+
       img {
         object-fit: contain;
         width: 40%;
       }
+
       &_info {
         position: relative;
         width: 100%;
         padding: 22px 30px;
+
         &_delete {
           background-color: transparent;
           border: none;
           position: absolute;
           top: 28px;
           right: 22px;
+
           &:hover svg {
             fill: #F26376;
           }
         }
       }
+
       &_title {
         font-weight: 400;
         font-size: 24px;
@@ -1089,6 +1139,7 @@ body {
         text-transform: uppercase;
         margin-bottom: 42px;
       }
+
       &_parameter {
         display: flex;
         font-weight: normal;
@@ -1096,15 +1147,19 @@ body {
         line-height: 26px;
         color: #575757;
         text-transform: capitalize;
+
         span {
           margin-left: 8px;
         }
+
         .price {
           color: #EF5B70;
         }
+
         .value {
           color: #6F6E6E;
         }
+
         .input {
           width: 44px;
           margin-left: 24px;
@@ -1118,6 +1173,7 @@ body {
       }
     }
   }
+
   &_order {
     &_total {
       display: flex;
@@ -1125,6 +1181,7 @@ body {
       background-color: #F5F3F3;
       padding: 40px 44px;
       margin-top: 57px;
+
       &_sub {
         font-weight: 400;
         font-size: 11px;
@@ -1133,6 +1190,7 @@ body {
         text-transform: uppercase;
         align-self: flex-end;
       }
+
       &_grand {
         font-weight: 300;
         font-size: 16px;
@@ -1140,16 +1198,20 @@ body {
         color: #222222;
         text-transform: uppercase;
         align-self: flex-end;
+
         .price {
           color: #F16D7F;
         }
       }
+
       .price {
         margin-right: 24px;
       }
+
       hr {
         border: 1px solid #E2E2E2;
       }
+
       &_btn {
         border: none;
         background-color: #F16D7F;
@@ -1159,6 +1221,7 @@ body {
         line-height: 19px;
         color: #FFFFFF;
         text-transform: uppercase;
+
         &:hover {
           background-color: #FFFFFF;
           border: 1px solid #F16D7F;
@@ -1174,11 +1237,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
   &_title {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     color: #222222;
+
     &.uppercase {
       text-transform: uppercase;
     }
@@ -1192,28 +1257,35 @@ body {
     line-height: 16px;
     color: #B1B1B1;
     text-transform: capitalize;
+
     &::placeholder {
       color: #222222;
     }
+
     &.registration {
       color: #222222;
+
       &::placeholder {
         color: #B1B1B1;
       }
     }
   }
+
   &_radios {
     display: flex;
     gap: 20px;
   }
+
   &_radio {
     &_input {
       display: none;
+
       &:checked ~ .form_radio_item:before {
         background-color: #F16D7F;
         border: 2px solid #FFFFFF;
       }
     }
+
     &_item {
       display: flex;
       align-items: center;
@@ -1223,6 +1295,7 @@ body {
       line-height: 13px;
       color: #000000;
       text-transform: capitalize;
+
       &:before {
         content: '';
         display: block;
@@ -1233,6 +1306,7 @@ body {
       }
     }
   }
+
   &_caption {
     font-weight: 300;
     font-size: 13px;
@@ -1241,6 +1315,7 @@ body {
     margin-top: -5px;
     margin-bottom: 19px;
   }
+
   &_button_light {
     width: fit-content;
     background-color: #FFFFFF;
@@ -1251,6 +1326,7 @@ body {
     line-height: 13px;
     color: #4A4A4A;
     text-transform: uppercase;
+
     &:hover {
       background-color: #d2d2d2;
     }
@@ -1269,13 +1345,16 @@ body {
     line-height: 17px;
     color: #FFFFFF;
     text-transform: uppercase;
+
     svg {
       fill: #FFFFFF;
     }
+
     &:hover {
       background-color: #FFFFFF;
       border: 1px solid #F16D7F;
       color: #F16D7F;
+
       svg {
         fill: #F16D7F;
       }
@@ -1287,6 +1366,7 @@ body {
   display: flex;
   gap: 128px;
   padding: 64px 0 96px;
+
   &_info {
     &_title {
       font-weight: 300;
@@ -1296,6 +1376,7 @@ body {
       text-transform: uppercase;
       margin-bottom: 22px;
     }
+
     &_description {
       font-weight: 300;
       font-size: 24px;
@@ -1303,8 +1384,10 @@ body {
       color: #000000;
       margin-bottom: 21px;
     }
+
     &_list {
       padding: 0;
+
       &_item {
         display: flex;
         list-style: none;
@@ -1313,6 +1396,7 @@ body {
         line-height: 29px;
         color: #000000;
         margin-bottom: 16px;
+
         &:before {
           display: block;
           margin-right: 22px;
@@ -1330,6 +1414,7 @@ body {
   }
   .page_head {
     height: 74px;
+
     .container {
       padding: 0 32px;
     }
@@ -1358,8 +1443,10 @@ body {
   .offer {
     gap: 19px;
     padding-top: 19px;
+
     &_item {
       max-width: 232px;
+
       &:last-child {
         max-width: none;
       }
@@ -1413,6 +1500,7 @@ body {
 
       .subscribing {
         margin-right: 0;
+
         &_form {
           margin-top: 27px;
         }
@@ -1434,13 +1522,16 @@ body {
     .container {
       padding: 148px 0;
     }
+
     &_img {
       display: none;
     }
+
     &_title {
       font-size: 38px;
       line-height: 46px;
     }
+
     &_subtitle {
       font-size: 20px;
       line-height: 24px;
@@ -1452,6 +1543,7 @@ body {
 
     &_item {
       max-width: none;
+
       &:last-child {
         flex-grow: 1;
       }
@@ -1499,7 +1591,7 @@ body {
       }
 
       .subscribing {
-       &_subtitle {
+        &_subtitle {
           font-size: 14px;
           line-height: 21px;
         }

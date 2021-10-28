@@ -274,7 +274,7 @@ body {
     line-height: 38px;
 
     &_red {
-      color: #F16D7F;;
+      color: #F16D7F;
     }
   }
 }
@@ -369,8 +369,10 @@ body {
     max-width: calc((100% - 60px) / 3);
     list-style: none;
 
-    &_card {
+    article {
       background-color: #F8F8F8;
+    }
+    &_card {
       text-decoration: none;
       &:hover {
         img {
@@ -599,7 +601,6 @@ body {
           display: flex;
           align-items: center;
           color: #222224;
-          opacity: 0.67;
           border: none;
           padding: 0 22px;
           box-sizing: border-box;
@@ -1317,6 +1318,208 @@ body {
           margin-right: 22px;
           content: url(../images/check.svg);
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .page_head {
+    height: 74px;
+    .container {
+      padding: 0 32px;
+    }
+  }
+  .brand {
+    &_img {
+      img {
+        width: 100%;
+      }
+    }
+
+    &_text {
+      margin-left: 0;
+    }
+
+    &_title {
+      font-size: 44px;
+      line-height: 53px;
+    }
+
+    &_subtitle {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  .offer {
+    gap: 19px;
+    padding-top: 19px;
+    &_item {
+      max-width: 232px;
+      &:last-child {
+        max-width: none;
+      }
+    }
+  }
+  .products {
+    padding-top: 154px;
+
+    &_wrp {
+      gap: 16px;
+      padding: 72px 0 32px;
+
+      &.product_page {
+        padding: 129px 0 128px;
+      }
+    }
+
+    &_item {
+      max-width: calc((100% - 16px) / 2);
+
+      &_text {
+        padding: 25px 16px 20px;
+      }
+    }
+
+    &_btn {
+      margin-bottom: 64px;
+    }
+  }
+  .features {
+    padding: 48px 0 64px;
+
+    .container {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  .footer {
+    &_subscription {
+      padding: 64px 0 140px;
+      background-position: 25%;
+
+      .container {
+        flex-direction: column;
+      }
+
+      .subscribe_info {
+        margin-bottom: 48px;
+      }
+
+      .subscribing {
+        margin-right: 0;
+        &_form {
+          margin-top: 27px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .registration_icon, .cart_icon {
+    display: none;
+  }
+  .page_head {
+    .container {
+      padding: 0 16px;
+    }
+  }
+  .brand {
+    .container {
+      padding: 148px 0;
+    }
+    &_img {
+      display: none;
+    }
+    &_title {
+      font-size: 38px;
+      line-height: 46px;
+    }
+    &_subtitle {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .offer {
+    gap: 32px;
+    padding-top: 64px;
+
+    &_item {
+      max-width: none;
+      &:last-child {
+        flex-grow: 1;
+      }
+    }
+  }
+  .products {
+    padding-top: 64px;
+
+    &_wrp {
+      gap: 15px;
+      padding: 64px 0 40px;
+
+      &.product_page {
+        padding: 64px 0 64px;
+      }
+    }
+
+    &_item {
+      max-width: 100%;
+    }
+
+    &_btn {
+      margin-bottom: 96px;
+    }
+  }
+  .features {
+    padding: 48px 0 81px;
+
+    .container {
+      flex-direction: column;
+      gap: 46px;
+    }
+  }
+
+  .footer {
+    &_subscription {
+      padding: 64px 0 109px;
+      background-position: 30%;
+
+      .subscribe_info {
+        &_txt {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+
+      .subscribing {
+       &_subtitle {
+          font-size: 14px;
+          line-height: 21px;
+        }
+
+        &_form {
+          height: 47px;
+          margin-top: 22px;
+        }
+      }
+    }
+
+    &_bottom {
+      padding: 43px 0 9px;
+
+      .container {
+        flex-direction: column-reverse;
+      }
+
+      .socials {
+        margin-bottom: 40px;
       }
     }
   }

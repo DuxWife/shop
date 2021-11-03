@@ -1364,10 +1364,12 @@ body {
 
 .registration {
   display: flex;
-  gap: 128px;
+  justify-content: space-between;
   padding: 64px 0 96px;
 
   &_info {
+    max-width: 652px;
+    margin-left: 22px;
     &_title {
       font-weight: 300;
       font-size: 24px;
@@ -1484,7 +1486,6 @@ body {
       gap: 48px;
     }
   }
-
   .footer {
     &_subscription {
       padding: 64px 0 140px;
@@ -1503,6 +1504,34 @@ body {
 
         &_form {
           margin-top: 27px;
+        }
+      }
+    }
+  }
+  .registration {
+    padding: 40px 16px 96px;
+
+    &_info {
+      &_title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 32px;
+      }
+
+      &_description {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 22px;
+      }
+
+      &_list {
+        &_item {
+          font-size: 16px;
+          line-height: 19px;
+
+          &:before {
+            margin-right: 23px;
+          }
         }
       }
     }
@@ -1577,7 +1606,6 @@ body {
       gap: 46px;
     }
   }
-
   .footer {
     &_subscription {
       padding: 64px 0 109px;
@@ -1613,6 +1641,14 @@ body {
       .socials {
         margin-bottom: 40px;
       }
+    }
+  }
+  .registration {
+    flex-direction: column;
+    padding: 40px 9px 96px;
+    &_info {
+      margin-left: 0;
+      margin-top: 40px;
     }
   }
 }

@@ -1175,6 +1175,8 @@ body {
   }
 
   &_order {
+    display: flex;
+    flex-direction: column;
     &_total {
       display: flex;
       flex-direction: column;
@@ -1189,6 +1191,7 @@ body {
         color: #4A4A4A;
         text-transform: uppercase;
         align-self: flex-end;
+        margin-bottom: 12px;
       }
 
       &_grand {
@@ -1536,6 +1539,32 @@ body {
       }
     }
   }
+  .cart {
+    flex-direction: column;
+    gap: 64px;
+    padding: 59px 16px 128px;
+    &_info {
+      &_btns {
+        justify-content: center;
+        gap: 48px;
+        margin-top: 62px;
+      }
+    }
+
+    &_order {
+      flex-direction: row;
+      gap: 15px;
+
+      .form {
+        flex-grow: 1;
+      }
+      &_total {
+        flex-grow: 1;
+        margin-top: 0;
+        height: 100%;
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {
@@ -1649,6 +1678,68 @@ body {
     &_info {
       margin-left: 0;
       margin-top: 40px;
+    }
+  }
+  .cart {
+    gap: 48px;
+    padding: 40px 9px 96px;
+    &_info {
+      &_btns {
+        margin-top: 30px;
+        gap: 30px;
+      }
+
+      &_btn {
+        padding: 8px 16px;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: none;
+      }
+    }
+
+    &_products {
+      gap: 32px;
+
+      &_card {
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        background-color: #FFFFFF;
+        display: flex;
+
+        &_info {
+          padding: 13px 17px;
+
+          &_delete {
+            top: 17px;
+            right: 12px;
+          }
+        }
+
+        &_title {
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 25px;
+        }
+
+        &_parameter {
+          font-size: 14px;
+          line-height: 17px;
+
+          .input {
+            width: 24px;
+            margin-left: 24px;
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+
+    &_order {
+      flex-direction: column;
+      &_total {
+        padding: 39px 34px;
+        margin-top: 48px;
+      }
     }
   }
 }

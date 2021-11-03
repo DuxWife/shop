@@ -1317,6 +1317,14 @@ body {
   .footer_subscription .subscribing_form {
     margin-top: 27px; }
 
+  .page_top {
+    padding: 60px 0; }
+
+  .filters {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
   .registration {
     padding: 40px 16px 96px; }
   .registration_info_title {
@@ -1432,6 +1440,46 @@ body {
             flex-direction: column-reverse; }
   .footer_bottom .socials {
     margin-bottom: 40px; }
+
+  .page_top {
+    padding: 50px 0; }
+  .page_top .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .page_top_caption {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center; }
+
+  .breadcrumbs {
+    margin-top: 32px; }
+
+  .filters .filter {
+    min-width: unset; }
+  .filters .filter_btn span {
+    display: none; }
+  .filters .filter_btn svg {
+    margin-left: 0;
+    height: 25px; }
+  .filters .filter_options {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .filters_dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
+  .filters_dropdown_item {
+    padding: 13px 0 13px 13px; }
 
   .registration {
     -webkit-box-orient: vertical;

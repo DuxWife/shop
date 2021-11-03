@@ -1511,6 +1511,12 @@ body {
       }
     }
   }
+  .page_top {
+    padding: 60px 0;
+  }
+  .filters {
+    justify-content: space-between;
+  }
   .registration {
     padding: 40px 16px 96px;
 
@@ -1669,6 +1675,52 @@ body {
 
       .socials {
         margin-bottom: 40px;
+      }
+    }
+  }
+  .page_top {
+    padding: 50px 0;
+
+    .container {
+      flex-direction: column;
+    }
+
+    &_caption {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #F16D7F;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .breadcrumbs {
+    margin-top: 32px;
+  }
+  .filters {
+    .filter {
+      min-width: unset;
+      &_btn {
+        span {
+          display: none;
+        }
+        svg {
+          margin-left: 0;
+          height: 25px;
+        }
+      }
+      &_options {
+        width: fit-content;
+      }
+    }
+
+    &_dropdown {
+      display: flex;
+      flex-grow: 2;
+
+      &_item {
+        padding: 13px 0 13px 13px;
       }
     }
   }

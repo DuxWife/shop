@@ -1571,6 +1571,12 @@ body {
       }
     }
   }
+  .product {
+    &_card {
+      padding: 64px;
+      transform: none;
+    }
+  }
 }
 
 @media (max-width: 375px) {
@@ -1621,7 +1627,7 @@ body {
       padding: 64px 0 40px;
 
       &.product_page {
-        padding: 64px 0 64px;
+        padding: 0 0 64px;
       }
     }
 
@@ -1721,6 +1727,9 @@ body {
 
       &_item {
         padding: 13px 0 13px 13px;
+        font-size: 10px;
+        line-height: 12px;
+
       }
     }
   }
@@ -1791,6 +1800,18 @@ body {
       &_total {
         padding: 39px 34px;
         margin-top: 48px;
+      }
+    }
+  }
+  .product {
+
+    &_card {
+      padding: 64px 16px;
+      transform: none;
+      &_content {
+        hr {
+          width: 174px;
+        }
       }
     }
   }

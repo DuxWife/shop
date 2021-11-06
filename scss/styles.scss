@@ -1175,6 +1175,8 @@ body {
   }
 
   &_order {
+    display: flex;
+    flex-direction: column;
     &_total {
       display: flex;
       flex-direction: column;
@@ -1189,6 +1191,7 @@ body {
         color: #4A4A4A;
         text-transform: uppercase;
         align-self: flex-end;
+        margin-bottom: 12px;
       }
 
       &_grand {
@@ -1364,10 +1367,12 @@ body {
 
 .registration {
   display: flex;
-  gap: 128px;
+  justify-content: space-between;
   padding: 64px 0 96px;
 
   &_info {
+    max-width: 652px;
+    margin-left: 22px;
     &_title {
       font-weight: 300;
       font-size: 24px;
@@ -1484,7 +1489,6 @@ body {
       gap: 48px;
     }
   }
-
   .footer {
     &_subscription {
       padding: 64px 0 140px;
@@ -1505,6 +1509,72 @@ body {
           margin-top: 27px;
         }
       }
+    }
+  }
+  .page_top {
+    padding: 60px 0;
+  }
+  .filters {
+    justify-content: space-between;
+  }
+  .registration {
+    padding: 40px 16px 96px;
+
+    &_info {
+      &_title {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 32px;
+      }
+
+      &_description {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 22px;
+      }
+
+      &_list {
+        &_item {
+          font-size: 16px;
+          line-height: 19px;
+
+          &:before {
+            margin-right: 23px;
+          }
+        }
+      }
+    }
+  }
+  .cart {
+    flex-direction: column;
+    gap: 64px;
+    padding: 59px 16px 128px;
+    &_info {
+      &_btns {
+        justify-content: center;
+        gap: 48px;
+        margin-top: 62px;
+      }
+    }
+
+    &_order {
+      flex-direction: row;
+      gap: 15px;
+
+      .form {
+        flex-grow: 1;
+      }
+      &_total {
+        flex-grow: 1;
+        margin-top: 0;
+        height: 100%;
+      }
+    }
+  }
+  .product {
+    &_card {
+      padding: 64px;
+      transform: none;
     }
   }
 }
@@ -1557,7 +1627,7 @@ body {
       padding: 64px 0 40px;
 
       &.product_page {
-        padding: 64px 0 64px;
+        padding: 0 0 64px;
       }
     }
 
@@ -1577,7 +1647,6 @@ body {
       gap: 46px;
     }
   }
-
   .footer {
     &_subscription {
       padding: 64px 0 109px;
@@ -1612,6 +1681,137 @@ body {
 
       .socials {
         margin-bottom: 40px;
+      }
+    }
+  }
+  .page_top {
+    padding: 50px 0;
+
+    .container {
+      flex-direction: column;
+    }
+
+    &_caption {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #F16D7F;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .breadcrumbs {
+    margin-top: 32px;
+  }
+  .filters {
+    .filter {
+      min-width: unset;
+      &_btn {
+        span {
+          display: none;
+        }
+        svg {
+          margin-left: 0;
+          height: 25px;
+        }
+      }
+      &_options {
+        width: fit-content;
+      }
+    }
+
+    &_dropdown {
+      display: flex;
+      flex-grow: 2;
+
+      &_item {
+        padding: 13px 0 13px 13px;
+        font-size: 10px;
+        line-height: 12px;
+
+      }
+    }
+  }
+  .registration {
+    flex-direction: column;
+    padding: 40px 9px 96px;
+    &_info {
+      margin-left: 0;
+      margin-top: 40px;
+    }
+  }
+  .cart {
+    gap: 48px;
+    padding: 40px 9px 96px;
+    &_info {
+      &_btns {
+        margin-top: 30px;
+        gap: 30px;
+      }
+
+      &_btn {
+        padding: 8px 16px;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: none;
+      }
+    }
+
+    &_products {
+      gap: 32px;
+
+      &_card {
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        background-color: #FFFFFF;
+        display: flex;
+
+        &_info {
+          padding: 13px 17px;
+
+          &_delete {
+            top: 17px;
+            right: 12px;
+          }
+        }
+
+        &_title {
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 25px;
+        }
+
+        &_parameter {
+          font-size: 14px;
+          line-height: 17px;
+
+          .input {
+            width: 24px;
+            margin-left: 24px;
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+
+    &_order {
+      flex-direction: column;
+      &_total {
+        padding: 39px 34px;
+        margin-top: 48px;
+      }
+    }
+  }
+  .product {
+
+    &_card {
+      padding: 64px 16px;
+      transform: none;
+      &_content {
+        hr {
+          width: 174px;
+        }
       }
     }
   }

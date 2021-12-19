@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
@@ -1073,7 +1072,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 128px;
-  padding: 96px 0 128px;
+  padding: 96px 20px 128px;
 
   &_info {
     &_btns {
@@ -1368,7 +1367,7 @@ body {
 .registration {
   display: flex;
   justify-content: space-between;
-  padding: 64px 0 96px;
+  padding: 64px 20px 96px;
 
   &_info {
     max-width: 652px;
@@ -1471,6 +1470,9 @@ body {
 
     &_item {
       max-width: calc((100% - 16px) / 2);
+      &:last-child {
+        display: none;
+      }
 
       &_text {
         padding: 25px 16px 20px;
@@ -1633,6 +1635,9 @@ body {
 
     &_item {
       max-width: 100%;
+      &:last-child {
+        display: block;
+      }
     }
 
     &_btn {

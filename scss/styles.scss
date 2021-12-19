@@ -224,6 +224,54 @@ body {
         fill: #6F6E6E;
       }
     }
+
+    .cart_icon {
+      position: relative;
+      .counter {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        color: white;
+        background: #f16d7f;
+        border-radius: 50%;
+        position: absolute;
+        text-align: center;
+        right: -10px;
+        top: -10px;
+        font-size: 12px;
+        line-height: 19px;
+      }
+
+      .cart_modal {
+        min-width: 300px;
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 37px;
+        background-color: #F8F8F8;
+        border: 1px solid #F16D7F;
+        padding: 10px;
+        font-size: 14px;
+        &.hidden {
+          display: none;
+        }
+        &_row {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #ebebeb;
+          padding-bottom: 10px;
+        }
+        &_header {
+          font-weight: bold;
+        }
+        &_total {
+          font-weight: bold;
+          text-align: right;
+        }
+      }
+    }
   }
 }
 

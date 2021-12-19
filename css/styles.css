@@ -186,6 +186,45 @@ body {
   fill: #E8E8E8; }
 .page_head_item .menu_item:hover {
   fill: #6F6E6E; }
+.page_head_item .cart_icon {
+  position: relative; }
+.page_head_item .cart_icon .counter {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  color: white;
+  background: #f16d7f;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  right: -10px;
+  top: -10px;
+  font-size: 12px;
+  line-height: 19px; }
+.page_head_item .cart_icon .cart_modal {
+  min-width: 300px;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 37px;
+  background-color: #F8F8F8;
+  border: 1px solid #F16D7F;
+  padding: 10px;
+  font-size: 14px; }
+.page_head_item .cart_icon .cart_modal.hidden {
+  display: none; }
+.page_head_item .cart_icon .cart_modal_row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px; }
+.page_head_item .cart_icon .cart_modal_header {
+  font-weight: bold; }
+.page_head_item .cart_icon .cart_modal_total {
+  font-weight: bold;
+  text-align: right; }
 
 .brand {
   background-color: #F1E4E6; }
